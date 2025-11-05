@@ -7,16 +7,31 @@ const searchRoutes = require('./routes/searchRoutes');
 const app = express();
 
 /**
-* @description this file contains the server configuration for the legal document search portal
-* @version 1.0.0
-* @author arefin-aareef
-* @gitHub https://github.com/arefin-aareef
-* @linkedIn https://linkedin.com/in/arefin-aareef
-* */
+ * @description this file contains the server configuration for the legal document search portal
+ * @version 1.0.0
+ * @author arefin-aareef
+ * @gitHub https://github.com/arefin-aareef
+ * @linkedIn https://linkedin.com/in/arefin-aareef
+ * */
 
 connectDB();
 
-app.use(cors());
+const corsOptions = {
+	origin: true, 
+	credentials: true,
+	methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+	allowedHeaders: [
+		'Content-Type',
+		'Authorization',
+		'Accept',
+		'X-Requested-With',
+	],
+	exposedHeaders: ['Content-Length', 'X-Foo', 'X-Bar'],
+	preflightContinue: false,
+	optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
