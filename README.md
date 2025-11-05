@@ -76,7 +76,7 @@ legal-documents-search/
 
 #### Step 1: Clone the Repository
 ```bash
-git clone <https://github.com/arefin-aareef/legal-documents-search.git>
+git clone https://github.com/arefin-aareef/legal-documents-search.git
 cd legal-documents-search
 ```
 
@@ -115,7 +115,8 @@ npm install
 
 Create `.env` file in frontend directory:
 ```env
-REACT_APP_API_URL=[5000](http://localhost:5000/api)
+REACT_APP_API_URL=http://localhost:5000/api
+#REACT_APP_API_URL=https://legal-documents-search.onrender.com/api
 ```
 
 Start frontend server:
@@ -126,8 +127,12 @@ npm start
 The application will open at `http://localhost:3000`
 
 #### Access the Application
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:5000/api
+- Frontend:
+  http://localhost:3000
+  https://legal-documents-search.vercel.app/
+- Backend API:
+  http://localhost:5000/api
+  https://legal-documents-search.onrender.com/api
 
 ## API Documentation
 
@@ -158,4 +163,4 @@ For issues and questions:
 
 ## Author
 
-https://www.linkedin.com/in/arefin-aareef/
+https://www.linkedin.com/in/arefin-aareef
