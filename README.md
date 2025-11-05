@@ -127,12 +127,11 @@ npm start
 The application will open at `http://localhost:3000`
 
 #### Access the Application
-- Frontend:
-  http://localhost:3000
-  https://legal-documents-search.vercel.app/
-- Backend API:
-  http://localhost:5000/api
-  https://legal-documents-search.onrender.com/api
+- Frontend (local): http://localhost:3000
+- Backend API (local): http://localhost:5000/api
+  
+- Frontend (deployed): https://legal-documents-search.vercel.app
+- Backend API (deployed): https://legal-documents-search.onrender.com/api
 
 ## API Documentation
 
